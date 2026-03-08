@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hissolve | 장가은 포트폴리오</title>
+  <meta
+    name="description"
+    content="Hissolve 프로젝트 상세 - 보안성과 안정성을 고려한 프로그래밍 대회 플랫폼"
+  />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/project/hissolve.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">GaEun Jang</a>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="./index.html" class="active">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hissolve-detail">
+    <section class="hiss-hero">
+      <div class="container">
+        <div class="hiss-hero-top fade-up">
+          <p class="hiss-kicker">PROJECT DETAIL</p>
+
+          <div class="hiss-meta">
+            <span class="hiss-badge">Contest Platform</span>
+            <span class="hiss-pill">2025.10 ~ 2025.11</span>
+            <span class="hiss-pill">2인 팀 프로젝트</span>
+            <span class="hiss-pill">Full-Stack Developer</span>
+          </div>
+
+          <h1 class="hiss-title">Hissolve</h1>
+          <p class="hiss-subtitle">보안성과 안정성을 고려한 프로그래밍 대회 플랫폼</p>
+
+          <p class="hiss-summary">
+            온라인 프로그래밍 문제 풀이와 자동 채점 기능을 제공하는 대회 플랫폼입니다.
+            관리자 관점의 대회 운영 기능과 사용자 관점의 문제 풀이 흐름을 함께 다루면서,
+            제출이 몰리는 환경에서도 안정적으로 동작할 수 있도록
+            실행 환경 분리와 connection pool 검증에 집중했습니다.
+          </p>
+
+          <div class="hiss-actions">
+            <a href="./index.html" class="btn btn-secondary">프로젝트 목록</a>
+          </div>
+        </div>
+
+        <div class="hiss-hero-grid fade-up">
+          <div class="hiss-hero-screen">
+            <img
+              src="../assets/images/hissolve-main.png"
+              alt="Hissolve 메인 화면"
+            />
+          </div>
+
+          <div class="hiss-hero-side">
+            <div class="hiss-side-card">
+              <h3>프로젝트 핵심</h3>
+              <ul>
+                <li>문제 등록 · 대회 생성 · 참가자 관리 기능</li>
+                <li>코드 실행, 테스트, 제출, 채점 결과 제공</li>
+                <li>동시 제출 상황에서의 실행 환경 분리</li>
+                <li>운영 환경 기준 자원 사용과 안정성 검증</li>
+              </ul>
+            </div>
+
+            <div class="hiss-side-card">
+              <h3>기술 스택</h3>
+              <div class="hiss-chips">
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>Docker</span>
+                <span>REST API</span>
+                <span>HikariCP</span>
+                <span>UUID</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hiss-section hiss-soft">
+      <div class="container">
+        <div class="hiss-section-head fade-up">
+          <p class="hiss-section-kicker">FEATURES</p>
+          <h2>주요 기능</h2>
+          <p>관리자 기능과 사용자 기능이 실제 대회 운영 흐름으로 이어지도록 설계했습니다.</p>
+        </div>
+
+        <div class="hiss-feature-list">
+          <article class="hiss-feature-card fade-up">
+            <div class="hiss-feature-image">
+              <img
+                src="../assets/images/hissolve-feature-admin.png"
+                alt="Hissolve 관리자 기능 화면"
+              />
+            </div>
+            <div class="hiss-feature-copy">
+              <span class="hiss-feature-type">ADMIN FLOW</span>
+              <h3>대회 및 문제 관리</h3>
+              <p class="hiss-feature-highlight">대회 생성·수정 및 문제 등록·관리 기능</p>
+              <p>
+                관리자는 프로그래밍 대회를 생성하고,
+                문제 난이도와 테스트 케이스를 설정하여 대회 문제를 구성할 수 있습니다.
+              </p>
+              <div class="hiss-inline-tags">
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hiss-feature-card reverse fade-up">
+            <div class="hiss-feature-image">
+              <img
+                src="../assets/images/hissolve-feature-user.png"
+                alt="Hissolve 사용자 기능 화면"
+              />
+            </div>
+            <div class="hiss-feature-copy">
+              <span class="hiss-feature-type">USER FLOW</span>
+              <h3>코드 실행 및 제출 흐름</h3>
+              <p class="hiss-feature-highlight">Run · Test · Submit 기반 문제 풀이 경험</p>
+              <p>
+                사용자는 문제를 선택해 코드를 작성하고 실행해볼 수 있으며,
+                제출 이후 테스트 케이스 기반 채점 결과를 확인할 수 있습니다.
+              </p>
+              <div class="hiss-inline-tags">
+                <span>Docker</span>
+                <span>REST API</span>
+                <span>Submission</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hiss-section">
+      <div class="container">
+        <div class="hiss-section-head fade-up">
+          <p class="hiss-section-kicker">MY ROLE</p>
+          <h2>내 역할</h2>
+          <p>사용자 기능과 제출 처리 안정성 개선을 중심으로 개발했습니다.</p>
+        </div>
+
+        <div class="hiss-role-grid fade-up">
+          <div class="hiss-role-box">
+            <h3>사용자 기능 개발</h3>
+            <p>대회 참가, 문제 선택, 코드 작성/실행/저장/제출, 결과 확인 흐름 개발</p>
+          </div>
+          <div class="hiss-role-box">
+            <h3>문제 풀이 UI 연동</h3>
+            <p>사용자가 실제 대회처럼 문제를 풀 수 있도록 화면 흐름과 API 연결</p>
+          </div>
+          <div class="hiss-role-box">
+            <h3>제출 처리 안정성 점검</h3>
+            <p>동시 제출 상황에서 파일 충돌과 실행 환경 혼선을 분석하고 구조 개선</p>
+          </div>
+          <div class="hiss-role-box">
+            <h3>자원 사용 검증</h3>
+            <p>connection pool 설정과 deadlock 발생 조건을 테스트 기반으로 점검</p>
+          </div>
+          <div class="hiss-role-box">
+            <h3>운영 관점 개선</h3>
+            <p>플랫폼이 실제 대회 운영에 사용될 수 있도록 안정성과 운영 가능성 확인</p>
+          </div>
+          <div class="hiss-role-box">
+            <h3>사용자 테스트 참여</h3>
+            <p>교내 사용자 테스트 결과를 바탕으로 서비스 품질과 운영 가능성 검증</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hiss-section hiss-soft">
+      <div class="container">
+        <div class="hiss-section-head fade-up">
+          <p class="hiss-section-kicker">RESULT</p>
+          <h2>프로젝트 성과</h2>
+          <p>이미지 내용 기반으로 실제 운영성과와 서비스 가치를 정리했습니다.</p>
+        </div>
+
+        <div class="hiss-result-grid">
+          <article class="hiss-result-panel fade-up">
+            <div class="hiss-result-head">
+              <h3>사용자 테스트 완료</h3>
+              <span class="hiss-result-count">100+ users</span>
+            </div>
+            <p>
+              교내 코딩 대회 플랫폼으로 실제 사용자 테스트를 진행하며
+              서비스 안정성과 운영 가능성을 검증했습니다.
+            </p>
+            <img
+              src="../assets/images/hissolve-result-test.png"
+              alt="Hissolve 사용자 테스트 결과"
+            />
+          </article>
+
+          <article class="hiss-result-summary fade-up">
+            <h3>프로젝트 성과</h3>
+            <ul>
+              <li>교내 전용 코딩 대회 플랫폼 구축으로 외부 서비스 의존성 해소</li>
+              <li>Docker 기반 격리 실행 환경 제공으로 보안성과 실행 안정성 강화</li>
+              <li>문제 풀이 중심 UI 제공으로 실제 대회 운영 가능성 확보</li>
+              <li>대규모 사용자 테스트를 통해 서비스 안정성 직접 검증</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hiss-section">
+      <div class="container">
+        <div class="hiss-section-head fade-up">
+          <p class="hiss-section-kicker">TROUBLE SHOOTING</p>
+          <h2>문제 해결 과정</h2>
+          <p>기능 구현보다 시스템 신뢰성에 더 직접적으로 연결된 이슈들을 중심으로 정리했습니다.</p>
+        </div>
+
+        <div class="hiss-trouble-list">
+          <article class="hiss-trouble-card fade-up">
+            <div class="hiss-trouble-title">
+              <span>#01</span>
+              <h3>Connection Pool 계산 오류와 deadlock 발생</h3>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>문제</h4>
+              <p>
+                HikariCP의 <code>maxPoolSize</code>를 150으로 설정했지만
+                실제 테스트 과정에서 deadlock이 발생했습니다.
+                당시에는 client 하나당 connection 하나만 사용할 것이라 가정했지만,
+                실제 요청 처리 흐름은 그보다 단순하지 않았습니다.
+              </p>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>원인 분석</h4>
+              <p>
+                connection 사용량을 단순히 “사용자 수 = connection 수”로 계산하면 안 된다는 점을 확인했습니다.
+                요청 처리 과정, 트랜잭션 범위, 동시에 실행되는 로직이 겹치면서
+                예상보다 더 많은 connection이 점유될 수 있었고,
+                이것이 deadlock과 waiting 상황으로 이어졌습니다.
+              </p>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>검증 방식</h4>
+              <p>
+                단순히 pool 크기를 키우는 대신,
+                오히려 Hikari max pool size를 1로 낮춰 테스트를 진행했습니다.
+                이를 통해 어느 지점에서 deadlock이 발생하는지,
+                connection timeout waiting이 얼마나 발생하는지를 더 명확하게 관찰할 수 있었습니다.
+              </p>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>결과</h4>
+              <p>
+                connection pool은 숫자만 크게 잡는 문제가 아니라,
+                요청 구조와 트랜잭션 설계를 함께 보고 검증해야 한다는 점을 배웠습니다.
+                이 경험을 통해 운영 환경 기준으로 자원 사용을 분석하는 시각을 갖게 되었습니다.
+              </p>
+            </div>
+          </article>
+
+          <article class="hiss-trouble-card fade-up">
+            <div class="hiss-trouble-title">
+              <span>#02</span>
+              <h3>서로 제출한 코드가 엉키는 현상</h3>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>문제</h4>
+              <p>
+                여러 사용자가 동시에 코드를 제출할 경우,
+                컴파일을 위해 생성되는 임시 파일이 같은 디렉토리를 공유하면서
+                다른 사용자의 코드와 실행 결과가 섞이는 문제가 발생했습니다.
+              </p>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>기존 방식</h4>
+              <p>
+                모든 사용자가 동일한 임시 경로를 바라보는 구조였습니다.
+                compile 시간이 겹치면 같은 위치의 파일을 덮어쓰게 되어 충돌이 발생할 수 있었습니다.
+              </p>
+<pre><code>String sharedDir = "/tmp/tempDir";</code></pre>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>해결 방식</h4>
+              <p>
+                제출마다 128비트 기반 UUID를 붙여
+                독립된 임시 디렉토리를 생성하도록 수정했습니다.
+                이를 통해 각 사용자의 제출이 완전히 분리된 공간에서 컴파일되도록 바꿨습니다.
+              </p>
+<pre><code>String uniqueDirPath = "/tmp/tempDir/" + UUID.randomUUID();</code></pre>
+            </div>
+
+            <div class="hiss-trouble-block">
+              <h4>결과</h4>
+              <p>
+                동시에 제출이 들어와도 파일 충돌 없이 각 제출을 독립적으로 처리할 수 있게 되었고,
+                실행 환경의 안정성과 제출 결과의 신뢰성을 높일 수 있었습니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hiss-section hiss-soft">
+      <div class="container">
+        <div class="hiss-retrospective fade-up">
+          <p class="hiss-section-kicker">RETROSPECTIVE</p>
+          <h2>배운 점</h2>
+          <p>
+            Hissolve를 통해 기능이 동작하는 것만으로는 충분하지 않고,
+            동시에 많은 요청이 몰리는 상황에서도 얼마나 안정적으로 동작하는지가
+            플랫폼의 신뢰성을 결정한다는 점을 배웠습니다.
+            특히 제출 처리처럼 자원 경쟁이 발생할 수 있는 서비스에서는
+            실행 환경 분리, connection pool 검증, 병목 구간 분석 같은
+            운영 관점의 문제 해결이 백엔드 개발자의 중요한 역할이라는 점을 체감했습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 GaEun Jang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
