@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let current = 0;
   let isAnimating = false;
-  const transitionDuration = 820;
+  const transitionDuration = 1250;
 
   function render(index) {
     if (isAnimating) return;
@@ -184,5 +184,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(countEl);
 });
-
-

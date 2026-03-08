@@ -16,167 +16,149 @@
     <link rel="stylesheet" href="../css/project/sudaduck.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="../index.html" class="logo">GaEun Jang</a>
-        <nav class="nav">
-          <a href="../index.html">Home</a>
-          <a href="./index.html" class="active">Projects</a>
-        </nav>
-      </div>
-    </header>
+    <div class="duck-topbar">
+      <a href="../index.html#projects" class="duck-topbar-link">프로젝트 목록</a>
+    </div>
 
     <main class="duck-detail">
       <section class="duck-hero">
         <div class="container">
           <div class="duck-hero-top fade-up">
             <p class="duck-kicker">PROJECT DETAIL</p>
-
-            <div class="duck-meta">
-              <span class="duck-badge">Web Project</span>
-              <span class="duck-period">2026.01 ~ 2026.02</span>
-              <span class="duck-period">4인 팀 프로젝트</span>
-              <span class="duck-period">Backend Developer</span>
+            <div class="duck-hero-badges">
+              <span class="duck-hero-type">Web Project</span>
+              <span class="duck-hero-award">SSAFY 우수상 수상</span>
             </div>
 
-            <h1>수다DUCK</h1>
+            <div class="duck-title-row">
+              <h1>수다DUCK</h1>
+              <a
+                href="https://github.com/gaeunnnn/sudaDUCK"
+                target="_blank"
+                class="duck-title-github"
+                aria-label="수다DUCK GitHub 저장소"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.88 1.56 2.31 1.11 2.87.85.09-.66.34-1.11.61-1.37-2.22-.26-4.56-1.15-4.56-5.13 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 5 0c1.9-1.34 2.74-1.06 2.74-1.06.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.77 0 3.99-2.34 4.87-4.57 5.13.35.31.66.91.66 1.84 0 1.33-.01 2.39-.01 2.72 0 .27.18.59.69.49A10.14 10.14 0 0 0 22 12.23C22 6.58 17.52 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
             <p class="duck-subtitle">
               일상 대화 기반 AI 분석 영어 회화 학습 서비스
             </p>
 
-            <p class="duck-summary">
-              한국어 실시간 대화를 기반으로 영어 학습용 스크립트를 생성하고,
-              발음 점수 평가와 복습 흐름까지 연결한 AI 기반 영어 회화 학습
-              서비스입니다. 이 프로젝트에서는 실시간 통신, 상태 동기화, 음성
-              처리 파이프라인, 그리고 Redis와 DB의 역할 분리를 중심으로 백엔드
-              구조를 설계했습니다.
-            </p>
-
-            <div class="duck-actions">
-              <a
-                href="https://github.com/gaeunnnn/sudaDUCK"
-                target="_blank"
-                class="btn btn-primary"
-                >GitHub</a
-              >
-              <a href="./index.html" class="btn btn-secondary">프로젝트 목록</a>
+            <div class="duck-hero-main-stack">
+              <div class="duck-chips">
+                <span>Spring Boot</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+                <span>Redis</span>
+                <span>WebSocket</span>
+                <span>STOMP</span>
+                <span>OpenVidu</span>
+                <span>Azure STT</span>
+                <span>OpenAI API</span>
+              </div>
             </div>
+
+            <p class="duck-summary">
+              한국어 실시간 대화를 기반으로 영어 학습용 스크립트를 생성하고  
+              발음 점수 평가와 복습 흐름까지 연결한 AI 기반 영어 회화 학습 서비스입니다.  
+              <br>
+              실시간 통신, 상태 동기화, 음성 처리 파이프라인을 중심으로  
+              Redis와 DB 역할을 분리한 백엔드 구조를 설계했습니다.
+            </p>
           </div>
 
           <div class="duck-hero-grid fade-up">
             <div class="duck-hero-screen">
               <img
-                src="../assets/images/project-sudaduck.png"
+                src="../assets/images/detailsudaduck.png"
                 alt="수다DUCK 메인 화면"
               />
             </div>
+          </div>
 
-            <div class="duck-hero-side">
-              <div class="duck-side-card">
-                <h3>프로젝트 핵심</h3>
-                <ul>
-                  <li>실시간 음성 대화 기반 학습 서비스</li>
-                  <li>대기방 · 게임방 상태 동기화 구조</li>
-                  <li>STT → 전처리 → 스크립트 생성 파이프라인</li>
-                  <li>발음 평가 및 복습 미니게임 연결</li>
-                </ul>
+          <div class="duck-hero-infobar fade-up">
+            <div class="duck-hero-overview">
+              <h3>프로젝트 개요</h3>
+              <div class="duck-overview-row">
+                <span>기간</span>
+                <p>2026.01 ~ 2026.02</p>
               </div>
-
-              <div class="duck-side-card">
-                <h3>기술 스택</h3>
-                <div class="duck-chips">
-                  <span>Spring Boot</span>
-                  <span>JPA</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>WebSocket</span>
-                  <span>STOMP</span>
-                  <span>OpenVidu</span>
-                  <span>Azure STT</span>
-                  <span>OpenAI API</span>
-                </div>
+              <div class="duck-overview-row">
+                <span>참여 인원</span>
+                <p>6인 팀 프로젝트</p>
+              </div>
+              <div class="duck-overview-row">
+                <span>역할</span>
+                <p>Backend Developer</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="duck-section duck-soft">
+      <section class="duck-section duck-function-showcase">
         <div class="container">
-          <div class="duck-section-head fade-up">
-            <p class="duck-section-kicker">SYSTEM ARCHITECTURE</p>
-            <h2>시스템 아키텍처</h2>
-            <p>
-              실시간 통신, 음성 처리, 상태 저장소의 역할을 분리해 설계한
-              구조입니다.
-            </p>
-          </div>
-
-          <div class="duck-arch-image-wrap fade-up">
+          <figure class="duck-function-full fade-up">
             <img
-              src="../assets/images/sudaduck-architecture.png"
-              alt="수다DUCK 시스템 아키텍처"
-              class="duck-arch-image"
+              src="../assets/images/sudaduck-function.png"
+              alt="수다DUCK 주요 기능 화면"
             />
-          </div>
-
-          <div class="duck-arch-caption fade-up">
-            <div class="duck-arch-caption-item">
-              <h3>핵심 설계 포인트</h3>
-              <p>
-                클라이언트, 실시간 통신 계층, 백엔드 API, Redis, DB, AI/STT
-                파이프라인의 역할을 분리해 응답성과 유지보수성을 함께
-                고려했습니다.
-              </p>
-            </div>
-
-            <div class="duck-arch-caption-item">
-              <h3>중점적으로 본 부분</h3>
-              <p>
-                즉시 반응이 필요한 상태 데이터는 Redis에서 처리하고, 최종적으로
-                보존이 필요한 학습 데이터는 DB에 저장하도록 설계했습니다.
-              </p>
-            </div>
-          </div>
+          </figure>
         </div>
       </section>
 
-      <section class="duck-section">
+      <section class="duck-section duck-soft duck-arch-role-section">
         <div class="container">
           <div class="duck-section-head fade-up">
-            <p class="duck-section-kicker">MY ROLE</p>
-            <h2>내 역할</h2>
+            <p class="duck-section-kicker">SYSTEM ARCHITECTURE · MY ROLE</p>
+            <h2>시스템 아키텍처와 담당 영역</h2>
             <p>
-              실시간 상태 관리와 음성 처리 흐름을 중심으로 백엔드 전반을
-              담당했습니다.
+              아키텍처 이미지를 기준으로 실시간 처리 흐름과 제가 담당한 백엔드
+              역할을 한 번에 보이도록 구성했습니다.
             </p>
           </div>
 
-          <div class="duck-role-grid fade-up">
-            <div class="duck-role-box">
-              <h3>백엔드 개발</h3>
-              <p>REST API 설계 및 구현, 도메인 로직 작성, 서비스 흐름 연결</p>
-            </div>
-            <div class="duck-role-box">
-              <h3>실시간 구조 설계</h3>
-              <p>WebSocket(STOMP) 기반 상태 동기화 및 방 전환 이벤트 처리</p>
-            </div>
-            <div class="duck-role-box">
-              <h3>데이터 모델링</h3>
-              <p>ERD 설계, 방/참여자/문장/학습 데이터 모델 구조 작성</p>
-            </div>
-            <div class="duck-role-box">
-              <h3>Redis 구조 설계</h3>
-              <p>즉시 반응이 필요한 상태 데이터와 영속 데이터 책임 분리</p>
-            </div>
-            <div class="duck-role-box">
-              <h3>OpenVidu 연동</h3>
-              <p>음성 대화 환경 연결 및 세션 흐름 처리</p>
-            </div>
-            <div class="duck-role-box">
-              <h3>STT 처리 파이프라인</h3>
-              <p>인식 결과 후처리 및 스크립트 생성 흐름 연결</p>
-            </div>
+          <div class="duck-arch-role-layout fade-up">
+            <figure class="duck-arch-visual">
+              <img
+                src="../assets/images/sudaduck-architecture.png"
+                alt="수다DUCK 시스템 아키텍처"
+                class="duck-arch-role-image"
+              />
+            </figure>
+
+            <aside class="duck-role-panel">
+              <p class="duck-role-panel-kicker">MY ROLE</p>
+              <h3>Backend Developer</h3>
+              <p class="duck-role-panel-summary">
+                실시간 상태 관리, 음성 처리 파이프라인, 저장소 책임 분리를
+                중심으로 백엔드 구조를 설계하고 구현했습니다.
+              </p>
+
+              <ul class="duck-role-panel-list">
+                <li>
+                  <h4>REST API 설계 및 개발</h4>
+                </li>
+                <li>
+                  <h4>DB 스키마 설계 · ERD 작성</h4>
+                </li>
+                <li>
+                  <h4>WebSocket 실시간 통신 구현</h4>
+                </li>
+                <li>
+                  <h4>Redis 캐싱 구조 설계</h4>
+                </li>
+                <li>
+                  <h4>OpenVidu WebRTC 연동</h4>
+                </li>
+                <li>
+                  <h4>STT 처리 파이프라인 구현</h4>
+                </li>
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
@@ -248,45 +230,23 @@
                 <span>#01</span>
                 <h3>동시 음성 입력 시 대화 순서 보장</h3>
               </div>
-
-              <div class="duck-trouble-block">
-                <h4>문제</h4>
-                <p>
-                  여러 사용자가 동시에 발화할 경우 STT 결과와 메시지 저장 순서가
-                  뒤섞이며 실제 대화 흐름과 다른 순서로 스크립트가 구성될
-                  가능성이 있었습니다. 단순 시간 기록만으로는 네트워크 지연이나
-                  처리 시점 차이로 인해 순서를 안정적으로 보장하기 어려웠습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>원인 분석</h4>
-                <p>
-                  발화 이벤트가 병렬로 들어오는 상황에서 각 요청이 독립적으로
-                  처리되다 보니 순서를 결정할 공통 기준이 없었습니다. 특히
-                  실시간 서비스에서는 “먼저 도착한 요청”과 “먼저 말한 사용자”가
-                  항상 일치하지 않는 문제가 있었습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>해결 방식</h4>
-                <p>
-                  Redis INCR 명령을 사용해 방 단위의 원자적 sequence 번호를
-                  생성하고, 각 발화에 순서를 부여한 뒤 이를 기준으로 후속 처리
-                  흐름을 연결했습니다. 즉, 실시간 처리 단계에서는 sequence를
-                  기준으로 정렬 가능한 구조를 만들고, 이후 스크립트 생성이나
-                  저장 단계에서도 같은 기준을 사용하도록 통일했습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>결과</h4>
-                <p>
-                  동시 발화 상황에서도 실제 대화 흐름과 가까운 순서를 유지할 수
-                  있었고, 후속 스크립트 생성 품질과 대화 리뷰의 일관성도 함께
-                  개선할 수 있었습니다.
-                </p>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>동시 발화 상황에서 메시지 저장 순서가 뒤섞여 실제 대화 흐름이 깨졌습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>병렬 요청 처리 과정에서 공통된 순서 기준이 없어 도착 순서와 발화 순서가 달랐습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>Redis INCR로 방 단위 sequence를 발급하고, STT 처리·저장·스크립트 생성 모두 이 번호 기준으로 정렬하도록 통일했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>동시 발화에서도 순서 일관성을 유지했고 리뷰/복습 데이터 품질이 안정화되었습니다.</p>
+                </div>
               </div>
             </article>
 
@@ -295,44 +255,23 @@
                 <span>#02</span>
                 <h3>STT 오인식으로 인한 스크립트 품질 저하</h3>
               </div>
-
-              <div class="duck-trouble-block">
-                <h4>문제</h4>
-                <p>
-                  사용자의 실제 대화가 STT 과정에서 잘못 인식되면, 이후 생성되는
-                  영어 스크립트와 복습 문장도 함께 왜곡되는 문제가 있었습니다.
-                  이는 단순한 오타 수준이 아니라, 학습 서비스 전체 품질을
-                  떨어뜨릴 수 있는 문제였습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>원인 분석</h4>
-                <p>
-                  음성 인식 결과에는 잡음, 발화 중복, 불완전한 문장, 맥락과 맞지
-                  않는 오인식 단어가 포함될 수 있었고, 이 상태로 곧바로 LLM에
-                  전달하면 잘못된 입력이 그대로 확장되는 구조였습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>해결 방식</h4>
-                <p>
-                  규칙 기반 필터링과 후처리 로직을 먼저 적용해 불필요한 토큰,
-                  반복 표현, 비정상 문장을 제거하는 전처리 파이프라인을
-                  구성했습니다. 이후 정제된 문장만 영어 스크립트 생성 단계로
-                  넘기도록 분리하여 “인식 결과”와 “학습용 텍스트” 사이에 품질
-                  보정 단계를 두었습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>결과</h4>
-                <p>
-                  영어 스크립트 생성 정확도가 개선되었고, 사용자 입장에서도 대화
-                  결과가 더 자연스럽고 학습 가능한 문장으로 제공되는 효과를
-                  얻었습니다.
-                </p>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>STT 오인식 문장이 그대로 반영되어 학습 스크립트 자연도가 떨어졌습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>음성 인식 결과를 검증 없이 LLM 단계로 전달해 노이즈가 그대로 확장됐습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>중복/잡음/비정상 구문을 제거하는 규칙 기반 전처리를 추가하고, 정제 완료 텍스트만 생성 파이프라인에 투입했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>스크립트 문장 정확도와 자연도가 개선되어 복습 콘텐츠 신뢰성이 높아졌습니다.</p>
+                </div>
               </div>
             </article>
 
@@ -341,45 +280,23 @@
                 <span>#03</span>
                 <h3>실시간 상태와 영속 데이터의 책임 분리</h3>
               </div>
-
-              <div class="duck-trouble-block">
-                <h4>문제</h4>
-                <p>
-                  방 준비 상태, 참여자 상태, 실시간 turn 정보처럼 즉시 반응이
-                  필요한 데이터와 학습 기록, 저장된 문장처럼 최종적으로
-                  보존되어야 하는 데이터를 같은 저장소와 흐름으로 처리하면
-                  구조가 복잡해지고 응답 속도에도 부담이 생길 수 있었습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>원인 분석</h4>
-                <p>
-                  모든 데이터를 DB 중심으로 처리하면 즉시성이 떨어지고, 반대로
-                  모든 데이터를 Redis에 두면 영속성과 관리 책임이 모호해집니다.
-                  결국 “어떤 데이터가 즉시성 중심인지, 어떤 데이터가 보존
-                  중심인지”를 먼저 구분하는 설계가 필요했습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>해결 방식</h4>
-                <p>
-                  실시간 반응이 필요한 상태 데이터는 Redis 중심으로 관리하고,
-                  최종 보존이 필요한 데이터만 DB에 저장하는 방향으로 책임을
-                  분리했습니다. 이를 통해 실시간 이벤트 처리 속도를
-                  확보하면서도, 학습 결과와 문장 데이터는 안정적으로 영속화할 수
-                  있는 구조를 만들었습니다.
-                </p>
-              </div>
-
-              <div class="duck-trouble-block">
-                <h4>결과</h4>
-                <p>
-                  상태 조회와 이벤트 반영 속도가 개선되었고, 데이터 저장 구조도
-                  훨씬 명확해져 유지보수성과 확장 가능성을 함께 확보할 수
-                  있었습니다.
-                </p>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>실시간 상태와 최종 학습 데이터를 같은 경로로 처리해 응답성과 구조가 함께 저하됐습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>즉시성 중심 데이터와 보존 중심 데이터의 저장 책임이 분리되어 있지 않았습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>방 상태/참여자 상태는 Redis에서 즉시 처리하고, 학습 결과/스크립트는 DB에 영속화하는 이중 저장 전략으로 분리했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>상태 조회 지연이 줄고 저장 구조가 명확해져 유지보수성과 확장성이 개선되었습니다.</p>
+                </div>
               </div>
             </article>
           </div>

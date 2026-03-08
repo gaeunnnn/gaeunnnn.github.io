@@ -193,6 +193,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 1100;
+  transition: transform 0.22s ease, opacity 0.22s ease;
 }
 
 .btn-icon {
@@ -293,9 +294,10 @@
   }
 
   .floating-nav {
-    right: 0;
+    left: 8px;
+    right: auto;
     top: auto;
-    bottom: 16px;
+    bottom: 14px;
     transform: none;
   }
 
