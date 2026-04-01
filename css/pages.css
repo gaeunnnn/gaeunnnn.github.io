@@ -649,8 +649,18 @@
 }
 
 .skills-stars .star.half {
+  position: relative;
+  color: rgba(23, 28, 42, 0.15);
+}
+
+.skills-stars .star.half::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
   color: #e1b900;
-  opacity: 0.5;
 }
 
 .skills-stars .star.empty {
