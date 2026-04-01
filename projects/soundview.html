@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundView | 장가은 포트폴리오</title>
+    <meta
+      name="description"
+      content="SoundView 프로젝트 상세 - 청각장애인을 위한 AI 영상 자막 서비스"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link rel="stylesheet" href="../css/project/sudaduck.css" />
+  </head>
+  <body>
+    <div class="duck-topbar">
+      <div class="duck-topbar-nav">
+        <span class="duck-topbar-prev-placeholder"></span>
+        <a href="../index.html#projects" class="duck-topbar-link">프로젝트 목록</a>
+        <a href="./sudaduck.html" class="duck-topbar-link duck-topbar-next">수다DUCK →</a>
+      </div>
+    </div>
+
+    <main class="duck-detail">
+      <section class="duck-hero">
+        <div class="container">
+          <div class="duck-hero-top fade-up">
+            <p class="duck-kicker">PROJECT DETAIL</p>
+            <div class="duck-hero-badges">
+              <span class="duck-hero-type">Web Project</span>
+            </div>
+
+            <div class="duck-title-row">
+              <h1>SoundView</h1>
+            </div>
+            <p class="duck-subtitle">
+              청각장애인을 위한 AI 영상 자막 서비스
+            </p>
+
+            <div class="duck-hero-main-stack">
+              <div class="duck-chips">
+                <span>Spring Boot</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+                <span>Redis</span>
+                <span>RabbitMQ</span>
+                <span>S3</span>
+                <span>SSE</span>
+                <span>FastAPI</span>
+                <span>OpenAI API</span>
+              </div>
+            </div>
+
+            <p class="duck-summary">
+              영상 속 음성을 분석하여 자막, 이모티콘, 진동 데이터로 변환하고
+              사용자가 소리를 듣지 않아도 상황과 감정을 인지할 수 있도록 설계한 서비스입니다.
+              <br>
+              영상 업로드부터 AI 처리, 결과 생성까지의 흐름을 비동기 구조로 분리하여
+              대용량 영상 처리와 안정적인 AI 파이프라인을 구축했습니다.
+            </p>
+          </div>
+
+          <div class="duck-hero-grid fade-up">
+            <div class="duck-hero-screen">
+              <img
+                src="../assets/images/detailsoundview.png"
+                alt="SoundView 메인 화면"
+              />
+            </div>
+          </div>
+
+          <div class="duck-hero-infobar fade-up">
+            <div class="duck-hero-overview">
+              <h3>프로젝트 개요</h3>
+              <div class="duck-overview-row">
+                <span>기간</span>
+                <p>2026.02 ~ 2026.03</p>
+              </div>
+              <div class="duck-overview-row">
+                <span>참여 인원</span>
+                <p>6인 팀 프로젝트</p>
+              </div>
+              <div class="duck-overview-row">
+                <span>역할</span>
+                <p>Backend Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="duck-section duck-function-showcase">
+        <div class="container">
+          <figure class="duck-function-full fade-up">
+            <img
+              src="../assets/images/soundview-function.png"
+              alt="SoundView 주요 기능 화면"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="duck-section duck-soft duck-arch-role-section">
+        <div class="container">
+          <div class="duck-section-head fade-up">
+            <p class="duck-section-kicker">SYSTEM ARCHITECTURE · MY ROLE</p>
+            <h2>시스템 아키텍처와 담당 영역</h2>
+            <p>
+              아키텍처 이미지를 기준으로 비동기 처리 흐름과 제가 담당한 백엔드
+              역할을 한 번에 보이도록 구성했습니다.
+            </p>
+          </div>
+
+          <div class="duck-arch-role-layout fade-up">
+            <figure class="duck-arch-visual">
+              <img
+                src="../assets/images/soundview-architecture.png"
+                alt="SoundView 시스템 아키텍처"
+                class="duck-arch-role-image"
+              />
+            </figure>
+
+            <aside class="duck-role-panel">
+              <p class="duck-role-panel-kicker">MY ROLE</p>
+              <h3>Backend Developer</h3>
+              <p class="duck-role-panel-summary">
+                영상 업로드부터 AI 처리, 결과 저장까지의 전체 흐름을 분리하고,
+                비동기 메시지 기반 처리 구조와 저장소 책임 분리를 중심으로
+                백엔드 구조를 설계하고 구현했습니다.
+              </p>
+
+              <ul class="duck-role-panel-list">
+                <li>
+                  <h4>REST API 설계 및 개발</h4>
+                </li>
+                <li>
+                  <h4>DB 스키마 설계 · ERD 작성</h4>
+                </li>
+                <li>
+                  <h4>Presigned URL 기반 S3 업로드 구조 구현</h4>
+                </li>
+                <li>
+                  <h4>RabbitMQ 기반 비동기 처리 파이프라인 설계</h4>
+                </li>
+                <li>
+                  <h4>AI 서버(FastAPI) 연동 및 결과 처리 로직 구현</h4>
+                </li>
+                <li>
+                  <h4>SSE 기반 처리 완료 알림 기능 구현</h4>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="duck-section">
+        <div class="container">
+          <div class="duck-section-head fade-up">
+            <p class="duck-section-kicker">PIPELINE</p>
+            <h2>영상 처리 및 AI 분석 파이프라인</h2>
+            <p>사용자의 영상이 업로드된 이후 AI 처리 결과가 생성되기까지의 흐름을 정리했습니다.</p>
+          </div>
+
+          <div class="duck-pipeline fade-up">
+            <div class="pipeline-step">
+              <span>01</span>
+              <h3>영상 업로드</h3>
+              <p>사용자가 Presigned URL을 통해 S3에 영상을 업로드</p>
+            </div>
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+              <span>02</span>
+              <h3>업로드 완료 처리</h3>
+              <p>업로드 완료 요청을 통해 서버 상태를 업데이트</p>
+            </div>
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+              <span>03</span>
+              <h3>메시지 큐 전달</h3>
+              <p>영상 S3 Key를 기반으로 MQ에 처리 요청 메시지 발행</p>
+            </div>
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+              <span>04</span>
+              <h3>AI 처리 (FastAPI)</h3>
+              <p>영상에서 음성을 추출하고, 자막·이벤트·진동 데이터 생성</p>
+            </div>
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+              <span>05</span>
+              <h3>결과 저장</h3>
+              <p>생성된 자막·진동·이벤트 데이터를 S3에 저장</p>
+            </div>
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+              <span>06</span>
+              <h3>처리 완료 알림</h3>
+              <p>처리 결과를 DB에 반영하고 SSE로 사용자에게 완료 알림 전달</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="duck-section duck-soft">
+        <div class="container">
+          <div class="duck-section-head fade-up">
+            <p class="duck-section-kicker">TROUBLE SHOOTING</p>
+            <h2>트러블 슈팅</h2>
+            <p>가장 오래 고민한 문제와 해결 과정을 중심으로 정리했습니다.</p>
+          </div>
+
+          <div class="duck-trouble-list">
+            <article class="duck-trouble-card fade-up">
+              <div class="duck-trouble-title">
+                <span>#01</span>
+                <h3>비동기 처리 환경에서 상태 불일치 발생</h3>
+              </div>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>영상 업로드 이후 AI 처리 상태가 지연되거나 실제 처리 상태와 불일치하는 문제가 발생했습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>업로드, AI 처리, 결과 저장이 서로 다른 시점에 수행되면서 단일 상태 기준 없이 비동기적으로 처리되어 상태 동기화가 어려웠습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>Video 상태를 PENDING → PROCESSING → COMPLETED → FAILED로 분리하고, MQ 메시지 흐름과 DB 상태 업데이트 시점을 명확히 정의하여 상태 전이를 일관되게 관리했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>비동기 처리 환경에서도 상태 흐름이 명확해졌고, 사용자에게 정확한 처리 상태를 안정적으로 제공할 수 있었습니다.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="duck-trouble-card fade-up">
+              <div class="duck-trouble-title">
+                <span>#02</span>
+                <h3>대용량 영상 업로드 시 서버 부하 발생</h3>
+              </div>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>영상 업로드 요청이 서버를 거치면서 트래픽 증가 시 서버 부하와 응답 지연이 발생했습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>파일 업로드를 서버가 직접 처리하는 구조로 인해 네트워크 및 서버 자원이 과도하게 사용되었습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>Presigned URL을 활용하여 클라이언트가 S3에 직접 업로드하도록 구조를 변경하고, 서버는 업로드 완료 이벤트만 처리하도록 역할을 분리했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>서버 부하가 감소하고 업로드 성능이 개선되었으며, 대용량 파일 처리에도 안정적인 구조를 확보했습니다.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="duck-trouble-card fade-up">
+              <div class="duck-trouble-title">
+                <span>#03</span>
+                <h3>AI 처리 지연으로 인한 사용자 경험 저하</h3>
+              </div>
+              <div class="duck-trouble-flow">
+                <div class="duck-trouble-step">
+                  <h4>문제</h4>
+                  <p>AI 처리 시간이 길어지면서 사용자가 결과를 기다리는 동안 서비스 응답성이 떨어졌습니다.</p>
+                </div>
+                <div class="duck-trouble-step">
+                  <h4>원인</h4>
+                  <p>영상 처리와 AI 분석이 동기적으로 연결되어 있어 요청-응답 흐름이 블로킹되는 구조였습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-solution">
+                  <h4>해결</h4>
+                  <p>RabbitMQ 기반 비동기 메시지 큐를 도입하여 영상 업로드와 AI 처리 과정을 분리하고, SSE를 통해 처리 완료 시점에 사용자에게 알림을 전달하도록 개선했습니다.</p>
+                </div>
+                <div class="duck-trouble-step is-result">
+                  <h4>결과</h4>
+                  <p>사용자는 즉시 업로드 완료 응답을 받을 수 있게 되었고, 전체 처리 흐름이 비동기화되면서 서비스 응답성과 확장성이 향상되었습니다.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="duck-section">
+        <div class="container">
+          <div class="duck-retrospective fade-up">
+            <p class="duck-section-kicker">RETROSPECTIVE</p>
+            <h2>배운 점</h2>
+            <p>
+              이 프로젝트를 통해 대용량 파일과 AI 처리가 결합된 서비스에서는
+              기능 구현보다 데이터 흐름을 어떻게 분리하고 비동기적으로 처리할지 설계하는 것이 더 중요하다는 점을 배웠습니다.
+            </p>
+            <p>
+              특히 업로드, AI 처리, 결과 저장처럼 여러 단계가 연결된 구조에서는
+              각 단계를 독립적으로 분리하고 메시지 기반으로 연결하는 것이
+              서비스의 안정성과 확장성에 큰 영향을 준다는 것을 체감했습니다.
+            </p>
+            <p>
+              또한 처리 결과를 사용자에게 전달하는 과정에서도
+              단순한 응답이 아닌 이벤트 기반 알림 구조를 설계하는 것이
+              사용자 경험을 개선하는 데 중요하다는 점을 경험했습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 GaEun Jang. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
